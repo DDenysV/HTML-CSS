@@ -1,0 +1,123 @@
+.footer {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	border-top: 1px solid $grey-5;
+	padding: 23px 0 0 0;
+    &__logo {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        padding-right: 42px;
+    }
+    &__text {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $grey-1;
+        justify-content: flex-start;
+        align-items: center;
+        display: flex;
+        padding: 0 18px;
+        transition-duration: 0.3s;
+        transition-property: color;
+        &:hover {
+            color: $purple;
+        }
+        &:active {
+            color: $purpleopacity;  
+        }
+    }
+    &__social {
+        align-items: center;
+        justify-content: flex-end;
+        display: flex;
+        margin-left: auto;
+        &_instagram svg {
+            fill: $grey-2;
+            transition-duration: 0.3s;
+            transition-property: fill;
+        }
+        &_instagram:hover svg {
+            fill: $red;
+        }
+        &_facebook svg {
+            fill: $grey-2;
+            transition-duration: 0.3s;
+            transition-property: fill;
+        }
+        &_facebook:hover svg {
+            fill: $fbk-color;
+        }
+        &_telegram svg {
+            fill: $grey-2;
+            transition-duration: 0.3s;
+            transition-property: fill;
+        }
+        &_telegram:hover svg {
+            fill: $telg-color;
+        }
+        span {
+            margin-top: 3px;
+            margin-left: 31px;
+            margin-right: 1px;
+            justify-content: flex-end;
+        }
+    }
+    &__bottom-text {
+        font-size: 12px;
+        line-height: 14px;
+        text-align: left;
+        color: $grey-3;
+        display: flex;
+        width: 1280px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        margin-top: 22px;
+        margin-left: 2px;
+    }
+}
+
+@media (max-width: 630px) {
+    .footer__text {
+        order: -2;
+        display: flex;
+        justify-content: center;
+        padding: 51px 18px;
+    }
+    .footer {
+        width: 375px;
+        display: flex;
+        justify-content: center;
+    }
+    .footer__logo {
+        width: 375px;
+        display: flex;
+        justify-content: center;
+        padding: 0 0 55px 0;
+    }
+    .footer__social { 
+        margin: 0;
+    }
+    .footer__social span {
+        margin: 0 16px;
+        width: 50px;
+    }
+    .footer__bottom-text {
+        width: 375px;
+        display: flex;
+        justify-content: center;
+        margin: 55px 0 30px 0;
+    }
+    .footer__bottom-text span {
+        width: 350px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+}

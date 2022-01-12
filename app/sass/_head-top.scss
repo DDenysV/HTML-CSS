@@ -1,0 +1,118 @@
+.head-top {
+	display: flex;
+	align-items: center;
+	margin-bottom: 16px;
+    &__logo  {
+        padding: 30px 54px 30px 0; 
+    }  
+    &__item{
+        display: flex;
+        align-items: center;
+        position: relative;
+        }
+    &__text_left {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: $grey-1;
+            display: flex;
+            align-items: center;
+            padding-left: 36px;
+            transition-duration: 0.5s;
+            transition-property: color;
+            &:hover {
+                color: $purple; 
+            }
+            &:active {
+                color: $purpleopacity; 
+            }
+        }
+    &__phone {
+        font-size: 16px;
+        line-height: 19px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $grey-1;
+        margin-left: auto;
+        transition-duration: 0.5s;
+        transition-property: color;
+        &:hover {
+            color: $purple;
+        }
+        &:active {
+            color: $purpleopacity;
+        }
+    }
+    &__basket { 
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $grey-1;
+        padding-left: 32px;
+        transition-duration: 0.5s;
+        transition-property: color;
+    &:hover {
+        color: $purple;
+    }
+        &_icon {
+            fill: $grey-1;
+            transition-duration: 0.5s;
+            transition-property: fill;
+            margin-left: 2px;
+	        margin-bottom: -3px;
+        }
+        &:hover svg {
+            fill: $purple;
+        }
+    }
+    &__link {
+        text-decoration: none;
+    }
+    &__number {
+        color: $white;
+        background-color: $red;
+        padding: 2px 4px;
+        margin-left: 4px;
+        border-radius: 64px;
+    }
+    &__menu-mobile {
+        text-decoration: none;
+        width: 40px;
+        height: 40px;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        margin-right: -40px;
+    }
+}
+@media (max-width: 765px) {
+    .head-top__text_left {
+        display: none;
+    }
+}
+
+@media (max-width: 630px) {
+    .head-top__logo {
+        padding-right: 9px;
+    }
+    .head-top__phone {
+        margin-left: 0;
+        margin-right: 23px;
+    }
+    .head-top__basket {
+        padding-left: 0;
+    }
+    .head-top__basket_text {
+        display: none;
+    }
+    .head-top__menu-mobile {
+        display: flex;
+        margin-left: 20px;
+    }
+}

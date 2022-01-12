@@ -1,0 +1,42 @@
+.list-menu {
+    list-style-type: none;
+	display: inline-flex;
+	height: 52px;
+	border-radius: 29px;
+	background-color: $grey-5;
+	align-items: center;
+	margin-bottom: 32px;
+    padding: 0 7px;
+    & a {
+        text-decoration: none;
+	    color: $grey-1;
+	    padding: 0 20px;
+    }
+    &__button {
+        appearance: none;
+        border: 0;
+        border-radius: 32px;
+        background: transparent;
+        padding: 0px 20px;
+        font-size: 14px;
+        height: 40px;
+        text-transform: uppercase;
+        font-weight: 500;
+        line-height: 16px;
+        color: $grey-1;
+        letter-spacing: 0.1em;
+        font-family: "Roboto", "Verdana", sans-serif;
+        font-style: normal;
+        cursor: pointer;
+        transition-duration: 0.3s;
+        transition-property: background-image, color;
+        &:hover {
+            background-image: $purplegradient;
+	        color: $white;
+        }
+    }
+    &__button_active {
+        background-image: $purplegradient;
+	    color: $white;
+    }
+}

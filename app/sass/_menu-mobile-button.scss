@@ -1,0 +1,22 @@
+.menu-mobile-button {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 110%;
+    border: none;
+    color: $grey-2;
+    background-color: $grey-6;
+    display: none;
+    align-items: center;
+    justify-content: flex-start;
+    width: 375px;
+    height: 51px;
+    background-image: url(../img/arrow-right.svg);
+    background-repeat: no-repeat;
+    background-position: 288px center;
+}
+
+@media (max-width: 630px) {
+    .menu-mobile-button {
+        display: flex;
+    }
+}
