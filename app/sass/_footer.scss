@@ -113,3 +113,10 @@
         }
     }
 }
+
+@media (max-width: 480px) {
+    .footer__bottom-text span{
+        width: 100%;
+        text-align: center;
+    }
+}
