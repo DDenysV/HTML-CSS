@@ -2,5 +2,10 @@
 	max-width: 1310px;
 	min-width: 375px;	
 	margin: 0 auto;
-	padding: 0 15px;
+}
+
+@media (max-width: 991px) {
+	.wrapper {
+		max-width: 768px;
+	}
 }

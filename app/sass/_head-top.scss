@@ -2,13 +2,16 @@
 	display: flex;
 	align-items: center;
 	margin-bottom: 16px;
+    min-height: 100px;
     &__logo  {
-        padding: 30px 54px 30px 0; 
+        margin-right: 30px; 
     }  
     &__item{
         display: flex;
         align-items: center;
         position: relative;
+        justify-content: space-evenly;
+        min-width: 350px;
         }
     &__text_left {
             font-weight: 500;
@@ -18,9 +21,9 @@
             text-transform: uppercase;
             text-decoration: none;
             color: $grey-1;
-            display: flex;
-            align-items: center;
-            padding-left: 36px;
+            // display: flex;
+            // align-items: center;
+            // padding-left: 36px;
             transition-duration: 0.5s;
             transition-property: color;
             &:hover {
@@ -54,7 +57,7 @@
         text-transform: uppercase;
         text-decoration: none;
         color: $grey-1;
-        padding-left: 32px;
+        margin-left: 32px;
         transition-duration: 0.5s;
         transition-property: color;
     &:hover {
@@ -73,13 +76,16 @@
     }
     &__link {
         text-decoration: none;
-    }
-    &__number {
+        min-width: 30px;
+        min-height: 30px;
+        padding: 4px;
         color: $white;
         background-color: $red;
-        padding: 2px 4px;
-        margin-left: 4px;
-        border-radius: 64px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 5px;
     }
     &__menu-mobile {
         text-decoration: none;
@@ -91,28 +97,27 @@
         margin-right: -40px;
     }
 }
-@media (max-width: 765px) {
-    .head-top__text_left {
+
+@media (max-width: 991px) {
+    .head-top__logo {
+        margin: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .head-top__item {
         display: none;
     }
 }
 
-@media (max-width: 630px) {
-    .head-top__logo {
-        padding-right: 9px;
-    }
-    .head-top__phone {
-        margin-left: 0;
-        margin-right: 23px;
-    }
-    .head-top__basket {
-        padding-left: 0;
+@media (max-width: 480px) {
+    .head-top__menu-mobile {
+        display: flex;
     }
     .head-top__basket_text {
         display: none;
     }
-    .head-top__menu-mobile {
-        display: flex;
+    .head-top__phone {
         margin-left: 20px;
     }
 }

@@ -40,3 +40,9 @@
 	    color: $white;
     }
 }
+
+@media (max-width: 768px) {
+    .list-menu {
+        display: none;
+    }
+}
