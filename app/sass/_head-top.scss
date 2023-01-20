@@ -94,7 +94,6 @@
         display: none;
         align-items: center;
         justify-content: center;
-        margin-right: -40px;
     }
 }
 
@@ -111,13 +110,16 @@
 }
 
 @media (max-width: 480px) {
+    .head-top {
+        justify-content: space-between;
+    }
     .head-top__menu-mobile {
         display: flex;
     }
     .head-top__basket_text {
         display: none;
     }
-    .head-top__phone {
-        margin-left: 20px;
+    .head-top__basket {
+        margin-left: 10px;
     }
 }

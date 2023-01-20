@@ -10,6 +10,7 @@
 	position: relative;
 	transition-duration: 0.3s;
 	transition-property: filter;
+    margin-bottom: 20px;
     & a {
         text-decoration: none;
     }
@@ -95,10 +96,17 @@
     }
 }
 
+@media (max-width: 1200px) {
+    .cart-list {
+        justify-content: space-around;
+    }
+}
+
 @media (max-width: 991px) {
     .cart-list {
         justify-content: space-around;
     }
+    
     .cart {
         margin-bottom: 20px;
     }
